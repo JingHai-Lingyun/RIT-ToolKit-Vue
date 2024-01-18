@@ -33,7 +33,7 @@ export default {
 </script>
 
 <template>
-    <div class="settingcard">
+    <div class="themesettingcard">
         <div class="cardhead" @click="toggleCardMain">
             <div class="titles">
                 <h2 class="title">{{ cardTitle }}</h2>
@@ -44,7 +44,7 @@ export default {
                     <svg
                         t="1705600489999"
                         class="icon"
-                        :class="{ 'open': this.showCardMain }"
+                        :class="{ open: this.showCardMain }"
                         viewBox="0 0 1024 1024"
                         version="1.1"
                         xmlns="http://www.w3.org/2000/svg"
@@ -80,10 +80,10 @@ export default {
 </template>
 
 <style scoped lang="less">
-div.settingcard {
+div.themesettingcard {
     border-radius: 5px;
     overflow: hidden;
-    margin: 20px 70px 0;
+    margin: 20px 70px 0 0;
     div.cardhead {
         height: 70px;
         background-color: var(--card-head);
@@ -96,25 +96,25 @@ div.settingcard {
             position: relative;
             top: -3px;
             right: 20px;
-            div.bg{
+            div.bg {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 32px;
                 height: 32px;
                 border-radius: 3px;
-                background-color: rgba(0,0,0,0);
+                background-color: rgba(0, 0, 0, 0);
                 transition: background-color 0.3s ease-in-out;
-                svg{
+                svg {
                     transform: none;
                     transition: transform 0.4s ease-in-out;
-                    &.open{
+                    &.open {
                         transform: rotate(180deg);
                     }
                 }
             }
         }
-        &:hover div.cardheadRight div.bg{
+        &:hover div.cardheadRight div.bg {
             background-color: var(--card-head-hover);
         }
         div.titles {
@@ -145,9 +145,9 @@ div.settingcard {
         }
         div.oneOption {
             margin-bottom: 20px;
-            label{
+            label {
                 cursor: pointer;
-                input{
+                input {
                     cursor: pointer;
                 }
             }

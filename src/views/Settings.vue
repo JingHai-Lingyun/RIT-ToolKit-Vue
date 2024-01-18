@@ -1,9 +1,9 @@
 <script>
-import settingcard from '../components/settingcard.vue'
+import themesettingcard from '../components/themesettingcard.vue'
 
 export default {
     components: {
-        settingcard
+        themesettingcard
     }
 }
 </script>
@@ -11,11 +11,14 @@ export default {
 <template>
     <div class="settings">
         <h1 id="title">Settings</h1>
-        <settingcard
-            :cardTitle="'Application Theme'"
-            :cardSubTitle="'Change the appearamce of your application'"
-            :cardType="'Theme'"
-        ></settingcard>
+        <div class="apart" id="Personalization">
+            <h2 class="partTitle">Personalization</h2>
+            <themesettingcard
+                :cardTitle="'Application Theme'"
+                :cardSubTitle="'Change the appearamce of your application'"
+                :cardType="'Theme'"
+            ></themesettingcard>
+        </div>
     </div>
 </template>
 
@@ -23,5 +26,13 @@ export default {
 h1#title {
     margin-top: 20px;
     margin-left: 40px;
+}
+div.apart {
+    display: block;
+    padding-left: 70px;
+    margin-top: 20px;
+    h2.partTitle{
+        opacity: 0.9;
+    }
 }
 </style>
