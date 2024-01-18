@@ -31,7 +31,7 @@ div.apart {
     display: block;
     padding-left: 70px;
     margin-top: 20px;
-    h2.partTitle{
+    h2.partTitle {
         opacity: 0.9;
     }
 }

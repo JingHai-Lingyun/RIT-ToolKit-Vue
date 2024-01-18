@@ -35,6 +35,21 @@ export default {
 <template>
     <div class="themesettingcard">
         <div class="cardhead" @click="toggleCardMain">
+            <svg
+                t="1703684304280"
+                class="icon cardicon"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                p-id="5901"
+                width="24"
+                height="24"
+            >
+                <path
+                    d="M452.8 12c-3-7.2-10-12-17.8-12h-38c-7.8 0-15 4.8-17.8 12l-41.4 103.4c-6.4 16-29.2 16-35.6 0L260.8 12c-3-7.2-10-12-17.8-12H224C171 0 128 43 128 96v416H896V96c0-53-43-96-96-96H589c-7.8 0-15 4.8-17.8 12l-41.4 103.4c-6.4 16-29.2 16-35.6 0L452.8 12zM128 576v64c0 70.6 57.4 128 128 128h128v128c0 70.6 57.4 128 128 128s128-57.4 128-128v-128h128c70.6 0 128-57.4 128-128v-64H128z m384 288a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                    p-id="5902"
+                ></path>
+            </svg>
             <div class="titles">
                 <h2 class="title">{{ cardTitle }}</h2>
                 <h5 class="subtitle">{{ cardSubTitle }}</h5>
@@ -91,6 +106,9 @@ div.themesettingcard {
         align-items: center;
         justify-content: flex-end;
         cursor: pointer;
+        svg.cardicon{
+            margin-left: 20px;
+        }
         div.cardheadRight {
             margin-left: auto;
             position: relative;
@@ -119,13 +137,10 @@ div.themesettingcard {
         }
         div.titles {
             display: block;
+            margin-left: 20px;
             h2.title {
-                margin-left: 20px;
                 font-size: 1.3rem;
                 font-weight: 300;
-            }
-            h5.subtitle {
-                margin-left: 20px;
             }
         }
     }
@@ -133,26 +148,28 @@ div.themesettingcard {
         display: flex;
         flex-direction: column;
         background-color: var(--card-main);
-        padding: 0 80px;
         height: 0;
         overflow: hidden;
         transition:
             height 0.5s ease-in-out,
             padding-top 0.6s ease-in-out;
         &.showCardMain {
-            padding: 20px 80px;
             height: 152px;
         }
         div.oneOption {
             margin-bottom: 20px;
+            margin-left: 80px;
             label {
                 cursor: pointer;
                 input {
                     cursor: pointer;
                 }
             }
+            &:first-child{
+                margin-top: 20px;
+            }
             &:last-child {
-                margin: 0;
+                margin-bottom: 0;
             }
         }
     }
