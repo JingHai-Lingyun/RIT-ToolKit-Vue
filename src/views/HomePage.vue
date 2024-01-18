@@ -2,4 +2,4 @@
     <div class="homepage"></div>
 </template>
 
-<style></style>
+<style scoped lang="less"></style>

@@ -146,19 +146,5 @@ div.navbar {
             top: -1px;
         }
     }
-    svg.icon {
-        fill: var(--color-text);
-        &#report {
-            margin-left: 20px;
-            position: relative;
-            top: -1.5px;
-            &:hover {
-                opacity: 0.9;
-            }
-            &:active {
-                opacity: 0.8;
-            }
-        }
-    }
 }
 </style>

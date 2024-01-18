@@ -4,7 +4,7 @@
     </div>
 </template>
 
-<style>
+<style scoped lang="less">
 .example {
     display: flex;
     justify-content: center;

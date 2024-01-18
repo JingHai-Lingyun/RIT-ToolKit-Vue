@@ -42,4 +42,20 @@ a,
 :root.dark {
     --card-head: #444;
     --card-main: #333;
+    --card-head-hover: rgba(0, 0, 0, 0.1);
+}
+
+svg.icon {
+    fill: var(--color-text);
+    &#report {
+        margin-left: 20px;
+        position: relative;
+        top: -1.5px;
+        &:hover {
+            opacity: 0.9;
+        }
+        &:active {
+            opacity: 0.8;
+        }
+    }
 }

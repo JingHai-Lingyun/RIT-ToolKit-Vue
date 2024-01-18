@@ -14,4 +14,9 @@ app.config.globalProperties.$theme_global = {
 
 app.use(createPinia())
 app.use(router)
+
+if (localStorage.getItem('theme') === null) {
+    localStorage.setItem('theme', 'auto')
+}
+
 app.mount('#app')

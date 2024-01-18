@@ -39,7 +39,26 @@ export default {
                 <h2 class="title">{{ cardTitle }}</h2>
                 <h5 class="subtitle">{{ cardSubTitle }}</h5>
             </div>
-            <div class="cardheadRight"></div>
+            <div class="cardheadRight">
+                <div class="bg">
+                    <svg
+                        t="1705600489999"
+                        class="icon"
+                        :class="{ 'open': this.showCardMain }"
+                        viewBox="0 0 1024 1024"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        p-id="5185"
+                        width="24"
+                        height="24"
+                    >
+                        <path
+                            d="M512 714.666667c-8.533333 0-17.066667-2.133333-23.466667-8.533334l-341.333333-341.333333c-12.8-12.8-12.8-32 0-44.8 12.8-12.8 32-12.8 44.8 0l320 317.866667 317.866667-320c12.8-12.8 32-12.8 44.8 0 12.8 12.8 12.8 32 0 44.8L533.333333 704c-4.266667 8.533333-12.8 10.666667-21.333333 10.666667z"
+                            p-id="5186"
+                        ></path>
+                    </svg>
+                </div>
+            </div>
         </div>
         <div class="cardmain" :class="{ showCardMain: showCardMain }" ref="cardmain">
             <div class="options">
@@ -71,8 +90,32 @@ div.settingcard {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        cursor: pointer;
         div.cardheadRight {
             margin-left: auto;
+            position: relative;
+            top: -3px;
+            right: 20px;
+            div.bg{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                border-radius: 3px;
+                background-color: rgba(0,0,0,0);
+                transition: background-color 0.3s ease-in-out;
+                svg{
+                    transform: none;
+                    transition: transform 0.4s ease-in-out;
+                    &.open{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+        &:hover div.cardheadRight div.bg{
+            background-color: var(--card-head-hover);
         }
         div.titles {
             display: block;
@@ -102,6 +145,12 @@ div.settingcard {
         }
         div.oneOption {
             margin-bottom: 20px;
+            label{
+                cursor: pointer;
+                input{
+                    cursor: pointer;
+                }
+            }
             &:last-child {
                 margin: 0;
             }

@@ -9,10 +9,8 @@ export default {
         }
     },
     mounted() {
-        // Init
         var ThemeStore = useThemeStore()
         this.theme = ThemeStore.theme
-        // Main
     },
     components: {
         navbar
