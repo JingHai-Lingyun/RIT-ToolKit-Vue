@@ -13,7 +13,7 @@
         </div>
         <div id="right" class="aside">
             <div>
-                <img src="/redstone.svg" alt="Redstone">
+                <img src="@/assets/redstone.svg" alt="Redstone">
                 <p>Redstone</p>
             </div>
         </div>
