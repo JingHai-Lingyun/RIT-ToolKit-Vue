@@ -35,14 +35,14 @@ a,
 }
 
 :root.light {
-    --card-head: #f4f4f4;
-    --card-main: #e9e9e9;
+    --card-head: #fafafa;
+    --card-main: #f4f4f4;
     --card-head-hover: rgba(255, 255, 255, 0.1);
 }
 
 :root.dark {
-    --card-head: #444;
-    --card-main: #333;
+    --card-head: #323232;
+    --card-main: #2c2c2c;
     --card-head-hover: rgba(0, 0, 0, 0.1);
 }
 

@@ -1,5 +1,5 @@
 <script>
-import themesettingcard from '../components/themesettingcard.vue'
+import themesettingcard from '@/components/setting/themesettingcard.vue'
 
 export default {
     components: {
