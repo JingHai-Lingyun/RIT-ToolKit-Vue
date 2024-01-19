@@ -1,10 +1,5 @@
 <script>
-export default {
-    props: {
-        cardTitle: String,
-        cardSubTitle: String
-    }
-}
+export default {}
 </script>
 
 <template>
@@ -26,8 +21,8 @@ export default {
                 ></path>
             </svg>
             <div class="titles">
-                <h2 class="title">{{ cardTitle }}</h2>
-                <h5 class="subtitle">{{ cardSubTitle }}</h5>
+                <h2 class="title">Author</h2>
+                <h5 class="subtitle">Copyright (c) 2024 LingyunAwA, All Rights Reserved.</h5>
             </div>
         </div>
     </div>

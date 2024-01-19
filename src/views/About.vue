@@ -1,9 +1,13 @@
 <script>
 import authorcard from '@/components/about/authorcard.vue'
+import bugcard from '@/components/about/bugcard.vue'
+import newcard from '@/components/about/newcard.vue'
 
 export default {
     components: {
-        authorcard
+        authorcard,
+        bugcard,
+        newcard
     }
 }
 </script>
@@ -13,10 +17,12 @@ export default {
         <h1 id="title">Information</h1>
         <div class="apart">
             <h2 class="partTitle">About</h2>
-            <authorcard
-                :cardTitle="'Author'"
-                :cardSubTitle="'Copyright (c) 2024 LingyunAwA, All Rights Reserved.'"
-            ></authorcard>
+            <authorcard></authorcard>
+        </div>
+        <div class="apart">
+            <h2 class="partTitle">Contribution</h2>
+            <bugcard></bugcard>
+            <newcard></newcard>
         </div>
     </div>
 </template>
