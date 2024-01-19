@@ -28,7 +28,7 @@ function mailToLingyunAwA() {
 
 <template>
     <div class="navbar">
-        <img src="../assets/logo.png" alt="RIT ToolKit Logo" />
+        <img src="/favicon.ico" alt="RIT ToolKit Logo" />
         <div class="title">
             <span id="maintitle">RIT ToolKit</span>
             <p id="subtitle">by LingyunAwA</p>

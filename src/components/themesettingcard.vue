@@ -106,7 +106,7 @@ div.themesettingcard {
         align-items: center;
         justify-content: flex-end;
         cursor: pointer;
-        svg.cardicon{
+        svg.cardicon {
             margin-left: 20px;
         }
         div.cardheadRight {
@@ -165,7 +165,7 @@ div.themesettingcard {
                     cursor: pointer;
                 }
             }
-            &:first-child{
+            &:first-child {
                 margin-top: 20px;
             }
             &:last-child {
