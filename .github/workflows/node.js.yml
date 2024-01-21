@@ -37,7 +37,7 @@ jobs:
           body: |
             Auto Building Release by Github CI
           draft: false
-          prerelease: false
+          prerelease: true
       - name: Upload release asset
         uses: actions/upload-release-asset@v1
         env:
