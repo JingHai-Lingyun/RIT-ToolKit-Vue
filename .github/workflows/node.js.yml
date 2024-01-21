@@ -9,7 +9,7 @@ on:
 jobs:
   build_job:
     name: Build Release
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node_version: ['latest']
