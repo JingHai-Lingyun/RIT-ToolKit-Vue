@@ -74,7 +74,7 @@ div.homepage {
             width: 270px;
             text-align: center;
             opacity: 0.3;
-            transition: transform 0.5s ease-in-out;
+            transition: transform 0.6s ease-in-out;
         }
     }
     div.aside {
