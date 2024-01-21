@@ -33,7 +33,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ci-${{ github.run_number }}
-          release_name: CI-Release \#${{ github.run_number }}
+          release_name: CI-Release No.${{ github.run_number }}
           body: |
             Auto Building Release by Github CI
           draft: false
