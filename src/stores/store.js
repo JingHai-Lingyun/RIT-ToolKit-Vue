@@ -20,6 +20,7 @@ export const useThemeStore = defineStore('theme', {
             const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)')
             if (theme == 'auto') {
                 darkModeQuery.addEventListener('change', handleDarkModeChange)
+                handleAutoTheme()
             } else {
                 document.querySelector(':root').classList = [theme]
                 darkModeQuery.removeEventListener('change', handleDarkModeChange)
@@ -28,7 +29,7 @@ export const useThemeStore = defineStore('theme', {
     }
 })
 
-window.onload = function () {
+function handleAutoTheme() {
     const theme = localStorage.getItem('theme')
     const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)')
     if (theme == 'auto') {
@@ -42,4 +43,8 @@ window.onload = function () {
         document.querySelector(':root').classList = [theme]
         darkModeQuery.removeEventListener('change', handleDarkModeChange)
     }
+}
+
+window.onload = function() {
+    handleAutoTheme()
 }
