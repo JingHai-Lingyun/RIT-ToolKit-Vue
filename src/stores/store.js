@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import { i18n } from '@/lang'
 
 function handleDarkModeChange(e) {
     if (e.matches) {
@@ -25,6 +26,20 @@ export const useThemeStore = defineStore('theme', {
                 document.querySelector(':root').classList = [theme]
                 darkModeQuery.removeEventListener('change', handleDarkModeChange)
             }
+        }
+    }
+})
+
+export const useLangStore = defineStore('lang', {
+    state: () => ({
+        locale: localStorage.getItem('language')
+    }),
+    actions: {
+        setLang(newLang) {
+            localStorage.setItem('language', newLang)
+            this.locale = newLang
+            i18n.global.locale.value = newLang
+            location.reload()
         }
     }
 })
