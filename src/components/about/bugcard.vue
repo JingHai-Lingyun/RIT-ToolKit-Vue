@@ -1,5 +1,7 @@
 <script>
-export default {}
+export default {
+    name: 'BugCard'
+}
 </script>
 
 <template>
@@ -25,12 +27,10 @@ export default {}
                 ></path>
             </svg>
             <div class="titles">
-                <h2 class="title">Report a Bug</h2>
-                <h5 class="subtitle">Create a new issue to report bug to us</h5>
+                <h2 class="title">{{ $t('Report a Bug') }}</h2>
+                <h5 class="subtitle">{{ $t('Create a new issue to report bug to us') }}</h5>
             </div>
-            <a href="https://github.com/lingyuns-rth-website/RIT-ToolKit-Vue/issues"
-                >Open Issue Page</a
-            >
+            <a href="https://github.com/lingyuns-rth-website/RIT-ToolKit-Vue/issues">{{ $t('Open Issue Page') }}</a>
         </div>
     </div>
 </template>

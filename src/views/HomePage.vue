@@ -1,5 +1,6 @@
 <script>
 export default {
+    name: 'HomePage',
     methods: {
         openRITOfficalPage() {
             window.open('https://www.mc-rit.com/')
@@ -9,27 +10,27 @@ export default {
 </script>
 
 <template>
-    <div class="homepage">
+    <div class="Homepage">
         <div id="left" class="aside">
             <div>
-                <h1 class="title">Welcome to use this RIT ToolKit</h1>
+                <h1 class="title">{{ $t('Welcome to use this RIT ToolKit') }}</h1>
                 <p class="info">
-                    If this tool help you, you can sponsor author at
-                    <a normal href="https://afdian.net/a/lingyunawa">here</a>
+                    {{ $t('If this tool help you, you can sponsor author at') }}
+                    <a normal href="https://afdian.net/a/lingyunawa">{{ $t('here') }}</a>
                 </p>
             </div>
         </div>
         <div id="right" class="aside" @click="openRITOfficalPage()">
             <div style="cursor: pointer">
                 <img src="@/assets/redstone.svg" alt="Redstone" />
-                <p>Redstone</p>
+                <p>Redstone Instiute of Technology</p>
             </div>
         </div>
     </div>
 </template>
 
 <style scoped lang="less">
-div.homepage {
+div.Homepage {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -74,11 +75,11 @@ div.homepage {
             width: 270px;
             text-align: center;
             opacity: 0.3;
-            transition: transform 0.6s ease-in-out;
+            transition: transform 0.5s ease-in-out;
         }
     }
     div.aside {
-        padding: 20px 80px;
+        padding: 40px 80px;
         display: flex;
         justify-content: center;
         align-items: center;
