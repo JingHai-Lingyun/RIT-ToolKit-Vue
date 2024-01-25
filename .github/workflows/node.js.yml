@@ -30,7 +30,7 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GITHUB_TOKEN: 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
         with:
           tag_name: ci-${{ github.run_number }}
           release_name: CI-Release No.${{ github.run_number }}
