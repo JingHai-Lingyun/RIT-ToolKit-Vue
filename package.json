@@ -1,6 +1,6 @@
 {
   "name": "rit-toolkit",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": true,
   "type": "module",
   "scripts": {
@@ -15,6 +15,7 @@
     "pinia": "^2.1.7",
     "smooth-scrollbar": "^8.8.4",
     "vue": "^3.3.11",
+    "vue-i18n": "^9.9.0",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {

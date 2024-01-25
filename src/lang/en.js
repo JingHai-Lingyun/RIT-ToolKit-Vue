@@ -3,7 +3,7 @@ export default {
     'About': 'About',
     'Settings': 'Settings',
     'Welcome to use this RIT ToolKit': 'Welcome to use this RIT ToolKit',
-    'If this tool help you, you can sponsor author at':'If this tool help you, you can sponsor author at:',
+    'If this tool help you, you can sponsor author at':'If this tool help you, you can sponsor author ',
     'here': 'here',
     'Redstone Instiute of Technology': 'Redstone Instiute of Technology',
     'Information': 'Information',
