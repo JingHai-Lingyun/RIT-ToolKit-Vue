@@ -24,7 +24,7 @@ export default {
 </script>
 
 <template>
-    <div class="themesettingcard">
+    <div class="langsettingcard">
         <div class="cardhead" @click="toggleCardMain">
             <svg
                 t="1706111434278"
@@ -68,21 +68,21 @@ export default {
         </div>
         <div class="cardmain" :class="{ showCardMain: showCardMain }" ref="cardmain">
             <div class="options">
-                <label :key="'chinese'">
+                <label :key="'zh'">
                     <input
                         type="radio"
                         v-model="selectedOption"
-                        :value="'chinese'"
+                        :value="'zh'"
                         :name="'LangSelect'"
                         @click="langSettingChanged('zh')"
                     />
                     {{ $t('Chinese') }}
                 </label>
-                <label :key="'english'">
+                <label :key="'en'">
                     <input
                         type="radio"
                         v-model="selectedOption"
-                        :value="'english'"
+                        :value="'en'"
                         :name="'LangSelect'"
                         @click="langSettingChanged('en')"
                     />
@@ -94,7 +94,7 @@ export default {
 </template>
 
 <style scoped lang="less">
-div.themesettingcard {
+div.langsettingcard {
     border-radius: 5px;
     overflow: hidden;
     margin: 20px 70px 0 0;
