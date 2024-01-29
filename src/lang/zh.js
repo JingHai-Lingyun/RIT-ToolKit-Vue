@@ -24,5 +24,15 @@ export default {
     'language': '语言',
     'Change the language of your application': '改变整个应用的语言',
     'English': 'English',
-    'Chinese': '中文'
+    'Chinese': '中文',
+    'Toolkit': '工具箱',
+    'counter':'计数器',
+    'Increment':'增加',
+    'count':'数量',
+    'Decrement':'减少',
+    '    ':'',
+    ' ':'',
+    '  ':'',
+    '   ':'',
+
 }

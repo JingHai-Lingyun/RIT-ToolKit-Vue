@@ -24,5 +24,15 @@ export default {
     'language': 'Language',
     'Change the language of your application': 'Change the language of your application',
     'English': 'English',
-    'Chinese': '中文'
+    'Chinese': '中文',
+    'Toolkit':'Toolkit',
+    'counter':'counter',
+    'Increment':'Increment',
+    'count':'count',
+    'Decrement':'Decrement',
+    '     ':'',
+    '    ':'',
+    '   ':'',
+    '  ':'',
+    ' ':''
 }
