@@ -33,6 +33,6 @@ export default {
     'Reset':'重置',
     'Confirm':'确定',
     'Enter title here':'自定义标题',
-    '   ':'',
+    'Go to Counter-Page':'计数器我来啦',
 
 }

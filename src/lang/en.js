@@ -33,6 +33,6 @@ export default {
     'Reset':'Reset',
     'Confirm':'Confirm',
     'Enter title here':'Enter title here',
-    '  ':'',
+    'Go to Counter-Page':'Go to Counter-Page',
     ' ':''
 }

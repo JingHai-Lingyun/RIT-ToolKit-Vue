@@ -5,6 +5,11 @@ export default {
     name: 'ToolkitView',
     components: {
         counter
+    },
+    methods: {
+        goToCounterPage() {
+            this.$router.push('/Counter-page')
+        }
     }
 }
 </script>
@@ -14,6 +19,7 @@ export default {
         <h1 id="title">{{ $t('Toolkit') }}</h1>
         <div class="counport" id="counter">
             <h2 class="partTitle">{{ $t('counter') }}</h2>
+            <router-link to="/Counter-page">{{ $t('Go to Counter-Page') }}</router-link>
             <counter></counter>
         </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="counter">
     <div v-if="title === $t('Default Title')">
-      <input v-model="tempTitle" :placeholder= "$t('Enter title here')">
+      <input v-model="tempTitle" :placeholder= "$t('Enter title here')" @keyup.enter="confirmTitle">
       <button @click="confirmTitle">{{ $t('Confirm') }}</button>
     </div>
     <h1>{{ title }}</h1>
@@ -31,7 +31,7 @@ export default {
     },
     reset() {
       this.count = 0
-      this.title = this.$t('Default Title')
+      this.title = this.$t('')
     },
     confirmTitle() {
       this.title = this.tempTitle
