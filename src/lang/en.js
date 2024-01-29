@@ -30,9 +30,9 @@ export default {
     'Increment':'Increment',
     'count':'count',
     'Decrement':'Decrement',
-    '     ':'',
-    '    ':'',
-    '   ':'',
+    'Reset':'Reset',
+    'Confirm':'Confirm',
+    'Enter title here':'Enter title here',
     '  ':'',
     ' ':''
 }

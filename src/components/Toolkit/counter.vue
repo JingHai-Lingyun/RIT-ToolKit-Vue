@@ -1,17 +1,25 @@
 <template>
-    <div class="counter">
-      <p>{{  $t('count') }}: {{ count }}</p>
-      <button @click="increment">{{ $t('Increment') }}</button>
-      <button @click="decrement">{{ $t('Decrement') }}</button>
+  <div class="counter">
+    <div v-if="title === $t('Default Title')">
+      <input v-model="tempTitle" :placeholder= "$t('Enter title here')">
+      <button @click="confirmTitle">{{ $t('Confirm') }}</button>
     </div>
-  </template>
-  
-  <script>
-  export default {
+    <h1>{{ title }}</h1>
+    <p>{{  $t('count') }}: {{ count }}</p>
+    <button class="counter-button" @click="increment">{{ $t('Increment') }}</button>
+    <button class="counter-button" @click="decrement">{{ $t('Decrement') }}</button>
+    <button class="counter-button" @click="reset">{{ $t('Reset') }}</button>
+  </div>
+</template>
+
+<script>
+export default {
   name: 'my-counter',
   data() {
     return {
-      count: 0
+      count: 0,
+      title: this.$t('Default Title'),
+      tempTitle: ''
     }
   },
   methods: {
@@ -20,10 +28,18 @@
     },
     decrement() {
       this.count--
+    },
+    reset() {
+      this.count = 0
+      this.title = this.$t('Default Title')
+    },
+    confirmTitle() {
+      this.title = this.tempTitle
+      this.tempTitle = ''
     }
   }
 }
-  </script>
+</script>
   
   <style scoped>
   .counter {

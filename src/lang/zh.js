@@ -30,9 +30,9 @@ export default {
     'Increment':'增加',
     'count':'数量',
     'Decrement':'减少',
-    '    ':'',
-    ' ':'',
-    '  ':'',
+    'Reset':'重置',
+    'Confirm':'确定',
+    'Enter title here':'自定义标题',
     '   ':'',
 
 }
