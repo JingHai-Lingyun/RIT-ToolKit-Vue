@@ -28,7 +28,7 @@ export default {
             ></authorcard>
         </div>
         <div class="apart">
-            <h2 class="partTitle">{{ $t('Settings') }}</h2>
+            <h2 class="partTitle">{{ $t('contribution') }}</h2>
             <bugcard></bugcard>
             <newcard></newcard>
         </div>
