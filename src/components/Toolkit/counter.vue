@@ -31,7 +31,7 @@ export default {
     },
     reset() {
       this.count = 0
-      this.title = this.$t('')
+      this.title = this.$t('Default Title')
     },
     confirmTitle() {
       this.title = this.tempTitle
