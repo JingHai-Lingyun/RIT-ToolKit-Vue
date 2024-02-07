@@ -37,6 +37,15 @@ export default {
             <RouterLink link to="/Home">{{ $t('HomePage') }}</RouterLink>
             <RouterLink link to="/About">{{ $t('About') }}</RouterLink>
             <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
+            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
+            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
+            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
+            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
+            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
+            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
+            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
+            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
+            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
         </nav>
         <div class="clock">
             <svg
@@ -111,7 +120,8 @@ div.navbar {
     }
     nav.menu {
         display: flex;
-        width: 70vw;
+        max-width: 66vw;
+        margin-right: 4vw;
         overflow-x: auto;
         white-space: nowrap;
         overflow-y: hidden;
