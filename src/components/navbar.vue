@@ -37,15 +37,6 @@ export default {
             <RouterLink link to="/Home">{{ $t('HomePage') }}</RouterLink>
             <RouterLink link to="/About">{{ $t('About') }}</RouterLink>
             <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
-            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
-            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
-            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
-            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
-            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
-            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
-            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
-            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
-            <RouterLink link to="/Settings">{{ $t('Settings') }}</RouterLink>
         </nav>
         <div class="clock">
             <svg
