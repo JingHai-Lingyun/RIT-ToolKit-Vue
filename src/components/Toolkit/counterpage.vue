@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'my-counter',
+  name: 'counterPage',
   data() {
     return {
       count: 0,

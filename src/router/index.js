@@ -27,6 +27,12 @@ const router = createRouter({
             path: '/Toolkit',
             name: 'Toolkit',
             component: () => import('../views/Toolkit.vue')
+        },
+        {
+            path: '/Counter-page',
+            name: 'CounterPage',
+            component: () => import('../components/Toolkit/counterpage.vue')
+
         }
     ]
 })

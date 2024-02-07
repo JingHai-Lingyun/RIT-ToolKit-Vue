@@ -1,4 +1,6 @@
 export default {
+    'Copyright (c) 2024 LingyunAwA, All rights reserved.': '版权所有 (c) 2024 LingyunAwA,保留所有权利。',
+    'Copyright (c) 2024 Edokawastrife, Chinese package author.': '版权所有 (c) 2024 Edokawastrife,中文包作者。',
     'HomePage': '导航之钥',
     'About': '关于',
     'Settings': '设置',
@@ -33,6 +35,8 @@ export default {
     'Reset':'重置',
     'Confirm':'确定',
     'Enter title here':'自定义标题',
-    'Go to Counter-Page':'计数器我来啦',
+    'Go to CounterPage':'计数器我来啦',
+    'Default Title':'自定义标题',
+    'This is a counter, not a calculator':'这是计数器,不是计算器'
 
 }
